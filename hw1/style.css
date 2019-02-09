@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('fonts/Montserrat-Regular.eot');
+    src: url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Montserrat-Regular.woff') format('woff'),
+    url('fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    background: black;
+    padding: 0px;
+    font-family: 'Montserrat Regular', sans-serif;
+}
+
+body {
+    margin: 0px;
+    background: white;
+
+}
+
+main {
+    min-height: 90vh;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+    background-color: black;
+}
+
+.card {
+    border-radius: 4px;
+    font-size: 16px;
+    border: ghostwhite solid 2px;
+    background-color: black;
+    color: ghostwhite;
+    margin: 5px 20px 5px 5px;
+    padding: 8px;
+
+}
+
+.products {
+    flex-flow: row wrap;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.product-item {
+    margin: 15px;
+    max-height: 80px;
+    text-align: center;
+    font-size: 16px;
+    width: 10%;
+    flex-wrap: wrap;
+    border: black solid 1px;
+    padding: 3px;
+    border-radius: 3px;
+}
