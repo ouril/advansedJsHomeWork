@@ -8,10 +8,11 @@ const products = [
     {title: "Notebook", price: 1500 },
     {title: "mouse", price: 20},
     {title: "Keyboard", price: 35},
+    {},
 
 ];
 
-const renderProduct = (title, price) => {
+const renderProduct = (title="Nothing", price="1") => {
     return `<div class="product-item"<h3>${title}</h3><p>${price}</p></div>`
 };
 
