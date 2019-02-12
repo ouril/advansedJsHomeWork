@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burger shop</title>
+</head>
+<body>
+<h2>Собери свой бургер!</h2>
+<hr>
+<form action="#">
+    <label>Выбери свой размер:</label>
+    <select name="size" id="size">
+        <option>Стандартный</option>
+        <option value="big">Большой</option>
+    </select>
+    <hr>
+    <label>Выбери с чем:</label>
+    <select name="ingridients" id="ing">
+        <option selected value="">---</option>
+        <option value="cheese">С сыром</option>
+        <option value="salate">С салатом</option>
+        <option value="patates">С картошкой</option>
+    </select>
+    <hr>
+    <div>
+        <label>С приправами?</label>
+        <input type="checkbox" id="isSpicy">
+    </div>
+    <br>
+    <div>
+        <label>Добавть майонез?</label>
+        <input type="checkbox" id="isMayonnaise" >
+    </div>
+    <hr>
+    <input type="button" value="Рассчитать стоимость Бургера" onclick="calculatePriceAndTitle()">
+</form>
+
+<h2 id="result"></h2>
+
+<script src="hamBurger.js"></script>
+</body>
+</html>
